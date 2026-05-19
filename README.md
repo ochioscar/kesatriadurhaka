@@ -1,1 +1,396 @@
-# kesatriadurhaka
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MistikDigital - Jasa Santet Online Paylater</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        .font-mystic { font-family: 'Cinzel', serif; }
+        .glass-card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .purple-glow {
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim { animation: float 4s ease-in-out infinite; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 glass-card border-b border-white/5 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-fire-flame-curved text-purple-500 text-2xl"></i>
+                <span class="font-mystic text-xl font-bold tracking-widest text-white">MISTIK<span class="text-purple-500">DIGITAL</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#services" class="hover:text-purple-400 transition">Layanan</a>
+                <a href="#paylater" class="hover:text-purple-400 transition">Paylater</a>
+                <a href="#testimonials" class="hover:text-purple-400 transition">Testimoni</a>
+            </div>
+            <a href="https://wa.me/62811135134?text=Halo%20MistikDigital,%20saya%20ingin%20konsultasi%20layanan%20ritual%20dan%20order%20sekarang." target="_blank" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                Order Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-900/20 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-900/20 rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <div class="inline-block px-4 py-1 border border-purple-500/30 rounded-full bg-purple-500/10 text-purple-400 text-xs font-bold uppercase tracking-widest mb-6">
+                🔥 #1 Supernatural Service in Cloud
+            </div>
+            <h1 class="font-mystic text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Selesaikan Masalah Anda Secara <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">Metafisika.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+                Solusi spiritual modern untuk masalah asmara, karir, dan persaingan bisnis. Cepat, anonim, dan kini bisa dibayar nanti dengan <b>SantetPay Later</b>.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/62811135134?text=Halo%20MistikDigital,%20saya%20tertarik%20untuk%20memulai%20ritual%20online." target="_blank" class="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-500 hover:text-white transition-all shadow-xl">
+                    Mulai Ritual Online
+                </a>
+                <a href="#paylater" class="glass-card text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all border border-white/20">
+                    Gunakan Paylater
+                </a>
+            </div>
+            <div class="mt-12 flex items-center justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition cursor-default">
+                <span class="text-xs font-bold tracking-tighter flex items-center gap-1"><i class="fa-solid fa-shield-halved"></i> 256-BIT ENCRYPTION</span>
+                <span class="text-xs font-bold tracking-tighter flex items-center gap-1"><i class="fa-solid fa-ghost"></i> ANONYMOUS SPIRITS</span>
+                <span class="text-xs font-bold tracking-tighter flex items-center gap-1"><i class="fa-solid fa-bolt"></i> INSTANT MANIFESTATION</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 bg-[#080808]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-mystic text-3xl md:text-4xl font-bold text-white mb-4">Paket Ritual Digital</h2>
+                <p class="text-gray-500">Pilih intensitas energi yang sesuai dengan kebutuhan Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paket Basic -->
+                <div class="glass-card p-8 rounded-3xl hover:border-purple-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition">
+                        <i class="fa-solid fa-wind text-2xl text-purple-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Paket Mimpi Buruk</h3>
+                    <p class="text-gray-400 text-sm mb-6">Cocok untuk memberi peringatan halus kepada mantan atau rekan kerja yang toxic.</p>
+                    <div class="text-2xl font-bold text-white mb-6">Rp 499.000 <span class="text-xs text-gray-500 font-normal">/ ritual</span></div>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Durasi 3 Malam Berturut</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Visualisasi Mimpi Seram</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Laporan Progress via WA</li>
+                    </ul>
+                    <a href="https://wa.me/62811135134?text=Halo%20MistikDigital,%20saya%20ingin%20pesan%20Paket%20Mimpi%20Buruk." target="_blank" class="block w-full text-center py-3 rounded-xl border border-white/10 hover:bg-white hover:text-black font-bold transition">Pilih Paket</a>
+                </div>
+
+                <!-- Paket Recommended -->
+                <div class="glass-card p-8 rounded-3xl border-purple-500 relative purple-glow transform scale-105 z-10 bg-gradient-to-b from-purple-900/10 to-transparent">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Paling Laris</div>
+                    <div class="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-skull text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Paket Gatal Syirik</h3>
+                    <p class="text-gray-400 text-sm mb-6">Membuat target merasa tidak nyaman dan gatal tanpa sebab medis yang jelas.</p>
+                    <div class="text-2xl font-bold text-white mb-6">Rp 1.499.000 <span class="text-xs text-gray-500 font-normal">/ ritual</span></div>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Manifestasi Fisik Ringan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Target Sulit Tidur Nyenyak</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Garansi 100% Tidak Terdeteksi</li>
+                    </ul>
+                    <a href="https://wa.me/62811135134?text=Halo%20MistikDigital,%20saya%20ingin%20pesan%20Paket%20Gatal%20Syirik%20(Paling%20Laris)." target="_blank" class="block w-full text-center py-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold transition shadow-lg shadow-purple-500/20">Pilih Paket</a>
+                </div>
+
+                <!-- Paket Premium -->
+                <div class="glass-card p-8 rounded-3xl hover:border-purple-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition">
+                        <i class="fa-solid fa-eye text-2xl text-purple-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Paket Rejeki Macet</h3>
+                    <p class="text-gray-400 text-sm mb-6">Menutup jalur keberuntungan kompetitor bisnis secara permanen melalui jalur astral.</p>
+                    <div class="text-2xl font-bold text-white mb-6">Rp 4.999.000 <span class="text-xs text-gray-500 font-normal">/ ritual</span></div>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> High-Level Energy Block</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Ritual Khusus Malam Jumat Kliwon</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-500"></i> Bonus Pagar Gaib untuk Anda</li>
+                    </ul>
+                    <a href="https://wa.me/62811135134?text=Halo%20MistikDigital,%20saya%20ingin%20pesan%20Paket%20Rejeki%20Macet." target="_blank" class="block w-full text-center py-3 rounded-xl border border-white/10 hover:bg-white hover:text-black font-bold transition">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paylater" class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto glass-card rounded-[40px] p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 border border-purple-500/20">
+            <div class="flex-1">
+                <div class="bg-indigo-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase w-fit mb-4">New Feature</div>
+                <h2 class="font-mystic text-4xl font-bold text-white mb-6">Balas Dendam Dulu, <br>Bayar Pas Gajian.</h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Jangan biarkan limit saldo menghambat keadilan Anda. Dengan <b>MistikPaylater</b>, Anda bisa melakukan ritual hari ini dan mencicil pembayarannya hingga 12 bulan. 
+                    <span class="text-purple-400">Bunga 0% untuk 3 bulan pertama!</span>
+                </p>
+                <div class="flex items-center gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-white">0%</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest">Bunga</div>
+                    </div>
+                    <div class="w-[1px] h-10 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-white">12 Bln</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest">Tenor</div>
+                    </div>
+                    <div class="w-[1px] h-10 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-white">Instant</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest">Approval</div>
+                    </div>
+                </div>
+                <button onclick="toggleModal()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-bold transition-all">
+                    Aktifkan Paylater Saya
+                </button>
+            </div>
+            <div class="flex-1 flex justify-center relative">
+                <div class="w-64 h-40 bg-gradient-to-br from-purple-600 to-indigo-800 rounded-2xl shadow-2xl p-6 relative z-10 transform -rotate-6 float-anim">
+                    <div class="flex justify-between items-start mb-8">
+                        <i class="fa-solid fa-ghost text-3xl text-white/50"></i>
+                        <span class="text-xs text-white/70 font-mono tracking-widest">MISTIK CARD</span>
+                    </div>
+                    <div class="text-lg font-mono text-white tracking-widest mb-2">**** **** **** 666</div>
+                    <div class="flex justify-between items-end">
+                        <span class="text-[10px] text-white/50 uppercase">Valued Customer</span>
+                        <div class="flex gap-1">
+                            <div class="w-6 h-6 bg-red-500/50 rounded-full"></div>
+                            <div class="w-6 h-6 bg-yellow-500/50 rounded-full -ml-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-purple-500/20 blur-[60px] rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="order" class="pt-24 pb-12 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="font-mystic text-4xl font-bold text-white mb-6">Siap Mengubah Nasib?</h2>
+            <p class="text-gray-500 mb-10 max-w-xl mx-auto">Sampaikan niat Anda melalui formulir terenkripsi kami. Privasi Anda adalah prioritas kami di alam fana maupun alam gaib.</p>
+            
+            <div class="max-w-md mx-auto glass-card p-8 rounded-3xl mb-20">
+                <form onsubmit="handleSubmit(event)" class="space-y-4 text-left">
+                    <div>
+                        <label class="text-xs font-bold text-gray-500 uppercase mb-2 block">Nama Target (Opsional)</label>
+                        <input type="text" placeholder="Gunakan inisial jika ragu" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 text-white transition">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold text-gray-500 uppercase mb-2 block">Niat/Keinginan</label>
+                        <textarea rows="3" placeholder="Jelaskan masalah Anda..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 text-white transition"></textarea>
+                    </div>
+                    <div class="flex items-center gap-2 py-2">
+                        <input type="checkbox" id="terms" class="rounded bg-purple-500">
+                        <label for="terms" class="text-xs text-gray-400">Saya setuju dengan syarat & ketentuan astral.</label>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-lg hover:brightness-110 transition shadow-xl shadow-purple-500/20">
+                        Kirim Energi Sekarang
+                    </button>
+                </form>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-left border-t border-white/5 pt-16">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-fire-flame-curved text-purple-500 text-xl"></i>
+                        <span class="font-mystic text-lg font-bold tracking-widest text-white">MISTIK</span>
+                    </div>
+                    <p class="text-gray-500 text-sm">Pelopor layanan supranatural berbasis cloud di Indonesia. Menggabungkan kearifan lokal dengan teknologi enkripsi modern.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Layanan</h4>
+                    <ul class="text-gray-500 text-sm space-y-3">
+                        <li><a href="#" class="hover:text-purple-400 transition">Santet Asmara</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Pelet Digital</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Pagar Gaib IP</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Bantuan</h4>
+                    <ul class="text-gray-500 text-sm space-y-3">
+                        <li><a href="#" class="hover:text-purple-400 transition">FAQ Astral</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Hubungi Dukun</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition">Syarat & Tumbal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Sosial Media</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-purple-600 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-purple-600 transition"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-gray-600 text-[10px] uppercase tracking-[0.2em]">
+                &copy; 2024 MistikDigital Labs. Website ini hanyalah satir/parodi belaka. Gunakan akal sehat.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal Paylater -->
+    <div id="modal" class="fixed inset-0 z-[60] flex items-center justify-center p-6 hidden">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="toggleModal()"></div>
+        <div class="relative glass-card p-8 rounded-[32px] max-w-md w-full border-purple-500/50 shadow-2xl">
+            <h3 class="font-mystic text-2xl text-white mb-4">Registrasi SantetPay</h3>
+            <p class="text-gray-400 text-sm mb-6">Limit Anda sedang dihitung berdasarkan amal ibadah dan beratnya niat Anda. Mohon tunggu...</p>
+            <div class="space-y-4">
+                <div class="bg-white/5 p-4 rounded-2xl flex items-center gap-4">
+                    <div class="w-12 h-12 bg-purple-600/20 rounded-full flex items-center justify-center text-purple-400">
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold text-white">Menghubungkan Server Gaib</div>
+                        <div class="text-[10px] text-gray-500">Latency: 13ms</div>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-4 rounded-2xl animate-pulse">
+                    <div class="h-4 bg-gray-700 w-3/4 rounded mb-2"></div>
+                    <div class="h-3 bg-gray-800 w-1/2 rounded"></div>
+                </div>
+            </div>
+            <button onclick="toggleModal()" class="w-full mt-8 py-3 rounded-xl bg-white text-black font-bold">Mengerti</button>
+        </div>
+    </div>
+
+    <!-- Feedback Message Box -->
+    <div id="messageBox" class="fixed bottom-10 right-10 z-[70] hidden">
+        <div class="glass-card px-6 py-4 rounded-2xl border-l-4 border-purple-500 flex items-center gap-4 shadow-2xl">
+            <i class="fa-solid fa-circle-check text-purple-500 text-xl"></i>
+            <div>
+                <div class="text-sm font-bold text-white" id="msgTitle">Berhasil!</div>
+                <div class="text-xs text-gray-400" id="msgBody">Permintaan Anda sedang diproses oleh admin kami.</div>
+            </div>
+            <button onclick="hideMessage()" class="text-gray-500 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.toggle('hidden');
+        }
+
+        function showMessage(title, body) {
+            const box = document.getElementById('messageBox');
+            document.getElementById('msgTitle').innerText = title;
+            document.getElementById('msgBody').innerText = body;
+            box.classList.remove('hidden');
+            box.classList.add('animate-bounce');
+            
+            setTimeout(() => {
+                box.classList.remove('animate-bounce');
+            }, 1000);
+
+            setTimeout(hideMessage, 5000);
+        }
+
+        function hideMessage() {
+            document.getElementById('messageBox').classList.add('hidden');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            
+            btn.disabled = true;
+            btn.innerText = "Mengirim Energi...";
+            
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerText = originalText;
+                showMessage("Ritual Diterima!", "Mengarahkan Anda ke WhatsApp Admin...");
+                
+                // Redirect to WhatsApp after success message
+                setTimeout(() => {
+                    window.open("https://wa.me/62811135134?text=Halo%20MistikDigital,%20saya%20sudah%20mengisi%20form%20di%20website%20dan%20siap%20melanjutkan%20ritual.", "_blank");
+                }, 1500);
+                
+                e.target.reset();
+            }, 2000);
+        }
+
+        // Add some scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-black/90');
+                nav.classList.remove('py-4', 'bg-transparent');
+            } else {
+                nav.classList.remove('py-2', 'bg-black/90');
+                nav.classList.add('py-4', 'bg-transparent');
+            }
+        });
+
+        // Memblokir klik kanan (Windows & Mac)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            showMessage("Energi Terdeteksi!", "Perisai astral memblokir akses ilegal ke sumber kekuatan kami.");
+        });
+
+        // Memblokir shortcut keyboard (Windows & Mac)
+        document.addEventListener('keydown', function(e) {
+            // Disable F12
+            if (e.keyCode === 123) {
+                e.preventDefault();
+                return false;
+            }
+
+            // Disable Ctrl+U or Cmd+U (View Source)
+            if ((e.ctrlKey || e.metaKey) && e.keyCode === 85) {
+                e.preventDefault();
+                showMessage("Akses Ditolak", "Kitab mantra ini tidak boleh disalin.");
+                return false;
+            }
+
+            // Disable Ctrl+Shift+I / Cmd+Option+I (Inspect)
+            // Disable Ctrl+Shift+J / Cmd+Option+J (Console)
+            // Disable Ctrl+Shift+C (Element Selector)
+            if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+                e.preventDefault();
+                showMessage("Akses Ditolak", "Mata batin Anda belum cukup kuat untuk melihat ini.");
+                return false;
+            }
+
+            // Disable Cmd+Option+U (Mac specific view source)
+            if (e.metaKey && e.altKey && e.keyCode === 85) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Proteksi tambahan untuk mencegah drag element
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
